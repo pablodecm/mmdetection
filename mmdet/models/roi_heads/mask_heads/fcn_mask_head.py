@@ -13,7 +13,7 @@ from mmdet.models.builder import HEADS, build_loss
 BYTES_PER_FLOAT = 4
 # TODO: This memory limit may be too much or too little. It would be better to
 # determine it based on available resources.
-GPU_MEM_LIMIT = 1024**3  # 1 GB memory limit
+GPU_MEM_LIMIT = 1024**3//4  # 0.25 GB memory limit
 
 
 @HEADS.register_module()
